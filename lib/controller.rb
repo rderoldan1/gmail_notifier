@@ -1,5 +1,5 @@
 require 'daemons'
-class Controller
 
-  Daemons.run('gmail_notifier.rb')
+class Controller
+  Daemons.run("#{File.dirname(__FILE__)}/gmail_notifier.rb")
 end
